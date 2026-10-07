@@ -1,0 +1,108 @@
+header {
+  stamp {
+    sec: 118
+    nsec: 207000000
+  }
+  data {
+    key: "frame_id"
+    value: "second_robot::base_footprint::camera_sensor"
+  }
+}
+width: 640
+height: 480
+distortion {
+  k: 0
+  k: 0
+  k: 0
+  k: 0
+  k: 0
+}
+intrinsics {
+  k: 554.38271282264407
+  k: 0
+  k: 320
+  k: 0
+  k: 554.38271282264407
+  k: 240
+  k: 0
+  k: 0
+  k: 1
+}
+projection {
+  p: 554.38271282264407
+  p: 0
+  p: 320
+  p: 0
+  p: 0
+  p: 554.38271282264407
+  p: 240
+  p: 0
+  p: 0
+  p: 0
+  p: 1
+  p: 0
+}
+rectification_matrix: 1
+rectification_matrix: 0
+rectification_matrix: 0
+rectification_matrix: 0
+rectification_matrix: 1
+rectification_matrix: 0
+rectification_matrix: 0
+rectification_matrix: 0
+rectification_matrix: 1
+
+header {
+  stamp {
+    sec: 118
+    nsec: 240000000
+  }
+  data {
+    key: "frame_id"
+    value: "second_robot::base_footprint::camera_sensor"
+  }
+}
+width: 640
+height: 480
+distortion {
+  k: 0
+  k: 0
+  k: 0
+  k: 0
+  k: 0
+}
+intrinsics {
+  k: 554.38271282264407
+  k: 0
+  k: 320
+  k: 0
+  k: 554.38271282264407
+  k: 240
+  k: 0
+  k: 0
+  k: 1
+}
+projection {
+  p: 554.38271282264407
+  p: 0
+  p: 320
+  p: 0
+  p: 0
+  p: 554.38271282264407
+  p: 240
+  p: 0
+  p: 0
+  p: 0
+  p: 1
+  p: 0
+}
+rectification_matrix: 1
+rectification_matrix: 0
+rectification_matrix: 0
+rectification_matrix: 0
+rectification_matrix: 1
+rectification_matrix: 0
+rectification_matrix: 0
+rectification_matrix: 0
+rectification_matrix: 1
+

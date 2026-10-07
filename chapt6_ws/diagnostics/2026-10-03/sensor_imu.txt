@@ -1,0 +1,130 @@
+header {
+  stamp {
+    sec: 118
+    nsec: 15000000
+  }
+  data {
+    key: "frame_id"
+    value: "second_robot::base_footprint::imu_sensor"
+  }
+  data {
+    key: "seq"
+    value: "0"
+  }
+}
+entity_name: "second_robot::base_footprint::imu_sensor"
+orientation {
+  x: 1.5270199101894053e-09
+  y: 3.9285396951207633e-07
+  z: 3.3919991718387745e-15
+  w: 0.99999999999992284
+}
+orientation_covariance {
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+}
+angular_velocity {
+  x: 3.6601141778881413e-12
+  y: -1.6573785267448347e-11
+  z: -5.1776078702035566e-15
+}
+angular_velocity_covariance {
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+}
+linear_acceleration {
+  x: -7.704822531807684e-06
+  y: 2.9929437752059861e-08
+  z: 9.799999999997171
+}
+linear_acceleration_covariance {
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+}
+
+header {
+  stamp {
+    sec: 118
+    nsec: 20000000
+  }
+  data {
+    key: "frame_id"
+    value: "second_robot::base_footprint::imu_sensor"
+  }
+  data {
+    key: "seq"
+    value: "1"
+  }
+}
+entity_name: "second_robot::base_footprint::imu_sensor"
+orientation {
+  x: 1.5270182722161988e-09
+  y: 3.9285397481012941e-07
+  z: 3.3936852200406964e-15
+  w: 0.99999999999992284
+}
+orientation_covariance {
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+}
+angular_velocity {
+  x: -4.2346111976437241e-12
+  y: 2.0656986554072446e-11
+  z: 2.9051525647815248e-15
+}
+angular_velocity_covariance {
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+}
+linear_acceleration {
+  x: -7.6935369334109839e-06
+  y: 3.12873868699476e-08
+  z: 9.8000000007021324
+}
+linear_acceleration_covariance {
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+}
+

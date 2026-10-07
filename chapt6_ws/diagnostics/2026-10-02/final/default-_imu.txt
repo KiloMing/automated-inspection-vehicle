@@ -1,0 +1,65 @@
+header {
+  stamp {
+    sec: 7
+    nsec: 300000000
+  }
+  data {
+    key: "frame_id"
+    value: "second_robot::base_footprint::imu_sensor"
+  }
+  data {
+    key: "seq"
+    value: "1"
+  }
+}
+entity_name: "second_robot::base_footprint::imu_sensor"
+orientation {
+  x: 1.5270185466902944e-09
+  y: 3.9285397821589727e-07
+  z: 2.3188086737336185e-15
+  w: 0.99999999999992284
+}
+orientation_covariance {
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+}
+angular_velocity {
+  x: -2.1262938493464175e-12
+  y: 2.4327561780584741e-12
+  z: -6.6894292960882118e-16
+}
+angular_velocity_covariance {
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+}
+linear_acceleration {
+  x: -7.7030699741062015e-06
+  y: 2.9566954833104137e-08
+  z: 9.79999999853871
+}
+linear_acceleration_covariance {
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+  data: 0
+}
+

@@ -1,0 +1,10 @@
+Hardware Component 1
+	name: GazeboSystem
+	type: 
+	plugin name: 
+	state: id=3 label=active
+	read/write rate: 0 Hz
+	is_async: False
+	command interfaces
+		left_joint/velocity [available] [unclaimed]
+		right_joint/velocity [available] [unclaimed]

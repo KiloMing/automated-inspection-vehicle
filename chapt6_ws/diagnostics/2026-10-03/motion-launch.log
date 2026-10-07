@@ -1,0 +1,124 @@
+[INFO] [launch]: All log files can be found below /home/kiloming/.ros/log/2026-10-03-10-47-02-087245-LINUX-15162
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [15166]
+[INFO] [gz-2]: process started with pid [15167]
+[INFO] [gz-3]: process started with pid [15168]
+[INFO] [parameter_bridge-4]: process started with pid [15169]
+[INFO] [create-5]: process started with pid [15170]
+[parameter_bridge-4] [INFO] [1790995622.213920297] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[robot_state_publisher-1] [INFO] [1790995622.221453756] [robot_state_publisher]: Robot initialized
+[gz-3] [1;32m[Msg] [0m[1;32mGazebo Sim Server v[0m[1;32m8.15.0[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/home/kiloming/my_ros/chapt6_ws/install/mybot_description/share/mybot_description/worlds/my_sensor_world.sdf[0m[1;32m].[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/my_world/create_multiple[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/my_world/create_multiple/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/my_world/remove[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/my_world/remove/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose_vector[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose_vector/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/my_world/light_config[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/my_world/light_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/my_world/set_physics[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/my_world/set_physics/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/my_world/set_spherical_coordinates[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/my_world/set_spherical_coordinates/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/my_world/enable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/my_world/enable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/my_world/disable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/my_world/disable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/visual_config[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/visual_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/wheel_slip[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/wheel_slip/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/my_world[0m[1;32m/control], [[0m[1;32m/world/my_world[0m[1;32m/control/state] and [[0m[1;32m/world/my_world[0m[1;32m/playback/control][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mWorld [[0m[1;32mmy_world[0m[1;32m] initialized with [[0m[1;32mdefault_physics[0m[1;32m] physics profile.[0m[1;32m[0m
+[create-5] [INFO] [1790995622.721113381] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-5]: process has finished cleanly [pid 15170]
+[gz-3] [1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
+[gz-3] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="second_robot"]/link[@name="base_footprint"]/sensor[@name="laser_sensor"]/gz_frame_id:/tmp/second_robot_8jgdvnwc.urdf:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-3] [INFO] [1790995624.375409173] [gz_ros_control]: Loading controller_manager
+[gz-3] [INFO] [1790995624.384610298] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gz-3] [WARN] [1790995624.384662173] [controller_manager]: The resource manager is not yet initialized, will wait for the robot description to initialize it..
+[gz-3] [INFO] [1790995624.390404632] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gz-3] [WARN] [1790995624.390469007] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gz-3] [INFO] [1790995624.559394132] [controller_manager]: Received robot description from topic.
+[gz-3] [INFO] [1790995624.559459465] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[gz-3] [INFO] [1790995624.563616090] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gz-3] [INFO] [1790995624.563667632] [gz_ros_control]: Loading joint: left_joint
+[gz-3] [INFO] [1790995624.563672507] [gz_ros_control]: 	State:
+[gz-3] [INFO] [1790995624.563676548] [gz_ros_control]: 		 position
+[gz-3] [INFO] [1790995624.563679423] [gz_ros_control]: 		 velocity
+[gz-3] [INFO] [1790995624.563684298] [gz_ros_control]: 	Command:
+[gz-3] [INFO] [1790995624.563686590] [gz_ros_control]: 		 velocity
+[gz-3] [INFO] [1790995624.563698090] [gz_ros_control]: Loading joint: right_joint
+[gz-3] [INFO] [1790995624.563700798] [gz_ros_control]: 	State:
+[gz-3] [INFO] [1790995624.563702882] [gz_ros_control]: 		 position
+[gz-3] [INFO] [1790995624.563705632] [gz_ros_control]: 		 velocity
+[gz-3] [INFO] [1790995624.563707715] [gz_ros_control]: 	Command:
+[gz-3] [INFO] [1790995624.563710132] [gz_ros_control]: 		 velocity
+[gz-3] [INFO] [1790995624.563734382] [gz_ros_control]: Loading sensor: imu_sensor
+[gz-3] [INFO] [1790995624.563739798] [gz_ros_control]: 	State:
+[gz-3] [WARN] [1790995624.563742715] [gz_ros_control]: IMU sensor 'imu_sensor' not found in hardware_info, skipping.
+[gz-3] [INFO] [1790995624.563824173] [controller_manager]: Initialize hardware 'GazeboSystem' 
+[gz-3] [WARN] [1790995624.563836382] [controller_manager.hardware_component.system.GazeboSystem]: Executor is not available during hardware component initialization for 'GazeboSystem'. Skipping node creation!
+[gz-3] [INFO] [1790995624.563874882] [controller_manager]: Successful initialization of hardware 'GazeboSystem'
+[gz-3] [INFO] [1790995624.563952548] [controller_manager]: Activating component 'GazeboSystem'.
+[gz-3] [INFO] [1790995624.563962257] [resource_manager]: 'configure' hardware 'GazeboSystem' 
+[gz-3] [INFO] [1790995624.563965965] [gz_ros_control]: System Successfully configured!
+[gz-3] [INFO] [1790995624.563971673] [resource_manager]: Successful 'configure' of hardware 'GazeboSystem'
+[gz-3] [INFO] [1790995624.563977257] [resource_manager]: 'activate' hardware 'GazeboSystem' 
+[gz-3] [INFO] [1790995624.563987590] [resource_manager]: Successful 'activate' of hardware 'GazeboSystem'
+[gz-3] [WARN] [1790995624.564060257] [controller_manager]: Component 'GazeboSystem' does not have read or write statistics initialized, skipping registration.
+[gz-3] [INFO] [1790995624.564066923] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gz-3] [WARN] [1790995626.416697258] [gz_ros_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gz-2] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="second_robot"]/link[@name="base_footprint"]/sensor[@name="laser_sensor"]/gz_frame_id:<data-string>:L260]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-3] [1;32m[Msg] [0m[1;32mLoading plugin [[0m[1;32mgz-rendering-ogre[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/my_world/scene/info[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/my_world/scene/deletion[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/my_world/state[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
+[gz-3] [INFO] [1790995670.114956653] [controller_manager]: Loading controller : 'codex_verify_velocity' of type 'forward_command_controller/ForwardCommandController'
+[gz-3] [INFO] [1790995670.114988945] [controller_manager]: Loading controller 'codex_verify_velocity'
+[gz-3] [INFO] [1790995670.123190528] [controller_manager]: Controller 'codex_verify_velocity' node arguments: --ros-args --params-file /home/kiloming/my_ros/chapt6_ws/install/mybot_description/share/mybot_description/config/ros2_control.yaml -p use_sim_time:=true --params-file diagnostics/2026-10-03/test-controllers.yaml --param use_sim_time:=true 
+[gz-3] [INFO] [1790995670.245947278] [controller_manager]: Configuring controller: 'codex_verify_velocity'
+[gz-3] [INFO] [1790995670.248300153] [codex_verify_velocity]: configure successful
+[gz-3] [INFO] [1790995670.255977903] [controller_manager]: Activating controllers: [ codex_verify_velocity ]
+[gz-3] [INFO] [1790995670.265841403] [codex_verify_velocity]: activate successful
+[gz-3] [INFO] [1790995670.266883653] [controller_manager]: Successfully switched controllers!
+[gz-3] [INFO] [1790995673.353909155] [controller_manager]: Loading controller : 'codex_verify_joints' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gz-3] [INFO] [1790995673.353943113] [controller_manager]: Loading controller 'codex_verify_joints'
+[gz-3] [INFO] [1790995673.371958780] [controller_manager]: Controller 'codex_verify_joints' node arguments: --ros-args --params-file /home/kiloming/my_ros/chapt6_ws/install/mybot_description/share/mybot_description/config/ros2_control.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[gz-3] [INFO] [1790995673.392367988] [controller_manager]: Configuring controller: 'codex_verify_joints'
+[gz-3] [INFO] [1790995673.392496322] [codex_verify_joints]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gz-3] [INFO] [1790995673.503635030] [controller_manager]: Activating controllers: [ codex_verify_joints ]
+[gz-3] [INFO] [1790995673.508904863] [controller_manager]: Successfully switched controllers!
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [parameter_bridge-4]: sending signal 'SIGINT' to process[parameter_bridge-4]
+[INFO] [gz-3]: sending signal 'SIGINT' to process[gz-3]
+[INFO] [gz-2]: sending signal 'SIGINT' to process[gz-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1790995887.612423590] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-4] [INFO] [1790995887.614916257] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-4] [INFO] [1790995887.621736424] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-1] [INFO] [1790995887.623582799] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [gz-2]: process has finished cleanly [pid 15167]
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 15169]
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 15166]
+[ERROR] [gz-3]: process has died [pid 15168, exit code -11, cmd 'gz sim --render-engine ogre -r -v 3 /home/kiloming/my_ros/chapt6_ws/install/mybot_description/share/mybot_description/worlds/my_sensor_world.sdf -s'].

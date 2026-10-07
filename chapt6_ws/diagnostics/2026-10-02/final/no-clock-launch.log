@@ -1,0 +1,168 @@
+[INFO] [launch]: All log files can be found below /home/kiloming/.ros/log/2026-10-02-21-23-01-063271-LINUX-26543
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [26550]
+[INFO] [gz-2]: process started with pid [26551]
+[INFO] [gz-3]: process started with pid [26552]
+[INFO] [create-4]: process started with pid [26553]
+[robot_state_publisher-1] [INFO] [1790947381.150326444] [robot_state_publisher]: Robot initialized
+[create-4] [INFO] [1790947381.152664152] [ros_gz_sim]: Waiting messages on topic [/robot_description].
+[gz-3] [1;32m[Msg] [0m[1;32mGazebo Sim Server v[0m[1;32m8.15.0[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/home/kiloming/my_ros/chapt6_ws/install/mybot_description/share/mybot_description/worlds/my_sensor_world.sdf[0m[1;32m].[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/my_world/create_multiple[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/my_world/create_multiple/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/my_world/remove[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/my_world/remove/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose_vector[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose_vector/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/my_world/light_config[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/my_world/light_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/my_world/set_physics[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/my_world/set_physics/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/my_world/set_spherical_coordinates[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/my_world/set_spherical_coordinates/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/my_world/enable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/my_world/enable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/my_world/disable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/my_world/disable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/visual_config[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/visual_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/wheel_slip[0m[1;32m] (async)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/wheel_slip/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/my_world[0m[1;32m/control], [[0m[1;32m/world/my_world[0m[1;32m/control/state] and [[0m[1;32m/world/my_world[0m[1;32m/playback/control][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mWorld [[0m[1;32mmy_world[0m[1;32m] initialized with [[0m[1;32mdefault_physics[0m[1;32m] physics profile.[0m[1;32m[0m
+[create-4] [INFO] [1790947381.741515611] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-4]: process has finished cleanly [pid 26553]
+[gz-3] [1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
+[gz-3] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="second_robot"]/link[@name="base_footprint"]/sensor[@name="laser_sensor"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-3] [INFO] [1790947383.333053945] [gz_ros_control]: Loading controller_manager
+[gz-3] [INFO] [1790947383.347873695] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gz-3] [WARN] [1790947383.347909695] [controller_manager]: The resource manager is not yet initialized, will wait for the robot description to initialize it..
+[gz-3] [INFO] [1790947383.353088362] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gz-3] [WARN] [1790947383.353145153] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gz-3] [INFO] [1790947383.516976612] [controller_manager]: Received robot description from topic.
+[gz-3] [INFO] [1790947383.517043778] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[gz-3] [INFO] [1790947383.519963320] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gz-3] [INFO] [1790947383.520024153] [gz_ros_control]: Loading joint: left_joint
+[gz-3] [INFO] [1790947383.520032112] [gz_ros_control]: 	State:
+[gz-3] [INFO] [1790947383.520036362] [gz_ros_control]: 		 position
+[gz-3] [INFO] [1790947383.520039653] [gz_ros_control]: 		 velocity
+[gz-3] [INFO] [1790947383.520044820] [gz_ros_control]: 	Command:
+[gz-3] [INFO] [1790947383.520047362] [gz_ros_control]: 		 velocity
+[gz-3] [INFO] [1790947383.520059695] [gz_ros_control]: Loading joint: right_joint
+[gz-3] [INFO] [1790947383.520062820] [gz_ros_control]: 	State:
+[gz-3] [INFO] [1790947383.520065362] [gz_ros_control]: 		 position
+[gz-3] [INFO] [1790947383.520068570] [gz_ros_control]: 		 velocity
+[gz-3] [INFO] [1790947383.520071112] [gz_ros_control]: 	Command:
+[gz-3] [INFO] [1790947383.520073487] [gz_ros_control]: 		 velocity
+[gz-3] [INFO] [1790947383.520103570] [gz_ros_control]: Loading sensor: imu_sensor
+[gz-3] [INFO] [1790947383.520109320] [gz_ros_control]: 	State:
+[gz-3] [WARN] [1790947383.520112445] [gz_ros_control]: IMU sensor 'imu_sensor' not found in hardware_info, skipping.
+[gz-3] [INFO] [1790947383.520168778] [controller_manager]: Initialize hardware 'GazeboSystem' 
+[gz-3] [WARN] [1790947383.520179945] [controller_manager.hardware_component.system.GazeboSystem]: Executor is not available during hardware component initialization for 'GazeboSystem'. Skipping node creation!
+[gz-3] [INFO] [1790947383.520222528] [controller_manager]: Successful initialization of hardware 'GazeboSystem'
+[gz-3] [INFO] [1790947383.520314987] [controller_manager]: Activating component 'GazeboSystem'.
+[gz-3] [INFO] [1790947383.520324612] [resource_manager]: 'configure' hardware 'GazeboSystem' 
+[gz-3] [INFO] [1790947383.520328320] [gz_ros_control]: System Successfully configured!
+[gz-3] [INFO] [1790947383.520331987] [resource_manager]: Successful 'configure' of hardware 'GazeboSystem'
+[gz-3] [INFO] [1790947383.520337403] [resource_manager]: 'activate' hardware 'GazeboSystem' 
+[gz-3] [INFO] [1790947383.520348570] [resource_manager]: Successful 'activate' of hardware 'GazeboSystem'
+[gz-3] [WARN] [1790947383.520407153] [controller_manager]: Component 'GazeboSystem' does not have read or write statistics initialized, skipping registration.
+[gz-3] [INFO] [1790947383.520412237] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gz-3] [INFO] [1790947383.528181112] [controller_manager]: Received robot description from topic.
+[gz-3] [WARN] [1790947383.528213445] [controller_manager]: ResourceManager has already loaded a urdf and is initialized. Ignoring attempt to reload a robot description.
+[gz-3] [WARN] [1790947385.378428404] [gz_ros_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gz-2] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="second_robot"]/link[@name="base_footprint"]/sensor[@name="laser_sensor"]/gz_frame_id:<data-string>:L260]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-3] [WARN] [1790947385.456348738] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947386.458671780] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947387.459813780] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [1;32m[Msg] [0m[1;32mLoading plugin [[0m[1;32mgz-rendering-ogre[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/my_world/scene/info[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/my_world/scene/deletion[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/my_world/state[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
+[gz-3] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
+[gz-3] [WARN] [1790947388.465315364] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947389.472750989] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947390.480570407] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947391.484009032] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947392.492661366] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947393.499369908] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947394.507912575] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947395.517180909] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947396.521986701] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947397.527478202] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947398.528751035] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947399.532819244] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947400.540690328] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947401.547908495] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947402.557150454] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947403.561868371] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947404.577269205] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947405.582890414] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947406.592035789] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947407.596662123] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947408.609590040] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947409.611259541] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947410.612594041] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947411.614642625] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947412.621221667] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947413.629472959] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947414.638030251] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947415.644736585] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947416.649945711] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947417.651971503] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947418.652595378] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947419.657649754] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947420.661890004] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947421.670546213] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947422.670715005] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947423.674042214] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947424.683620631] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947425.686575423] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947426.687740466] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947427.691993799] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947428.698918383] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947429.710153342] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947430.716125051] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947431.720564051] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947432.729980010] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947433.737702552] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947434.749958719] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947435.752466928] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947436.753402095] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947437.759570971] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947438.763776721] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947439.770606763] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947440.779224222] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947441.788117514] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947442.799169265] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947443.800631140] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947444.811623682] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947445.812387975] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947446.821606392] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947447.831157017] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947448.833174434] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947449.839538852] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947450.842712352] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947451.845763311] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947452.847973353] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947453.856758645] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947454.869416354] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gz-3] [WARN] [1790947455.878567229] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available

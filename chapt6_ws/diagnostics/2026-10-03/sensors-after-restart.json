@@ -1,0 +1,38 @@
+[
+  {
+    "topic": "/imu",
+    "messages": 2,
+    "bytes": 1888,
+    "advancing": true
+  },
+  {
+    "topic": "/scan",
+    "messages": 2,
+    "bytes": 20254,
+    "advancing": true
+  },
+  {
+    "topic": "/camera/image",
+    "messages": 2,
+    "bytes": 7373324,
+    "advancing": true
+  },
+  {
+    "topic": "/camera/depth_image",
+    "messages": 2,
+    "bytes": 8033950,
+    "advancing": true
+  },
+  {
+    "topic": "/camera/points",
+    "messages": 2,
+    "bytes": 54771158,
+    "advancing": true
+  },
+  {
+    "topic": "/camera/camera_info",
+    "messages": 2,
+    "bytes": 2070,
+    "advancing": true
+  }
+]

@@ -1,0 +1,39 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    use_sim_time: true
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    wheel_effort_controller:
+      type: effort_controllers/JointGroupEffortController
+
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+
+wheel_effort_controller:
+  ros__parameters:
+    joints:
+      - left_joint
+      - right_joint
+
+diff_drive_controller:
+  ros__parameters:
+    left_wheel_names:
+      - left_joint
+    right_wheel_names:
+      - right_joint
+
+    wheel_separation: 0.22 
+    wheel_radius: 0.032
+
+    base_frame_id: base_footprint
+    odom_frame_id: odom
+
+    publisher_rate: 50.0
+    enable_odom_tf: true
+
+    cmd_vel_timeout: 0.5
+
+    

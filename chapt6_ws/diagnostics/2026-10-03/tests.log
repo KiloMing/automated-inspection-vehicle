@@ -1,0 +1,523 @@
+Starting >>> mybot_description
+--- stderr: mybot_description
+Errors while running CTest
+Output from these tests are in: /home/kiloming/my_ros/chapt6_ws/build/mybot_description/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+---
+Finished <<< mybot_description [2.50s]	[ with test failures ]
+
+Summary: 1 package finished [3.51s]
+  1 package had stderr output: mybot_description
+  1 package had test failures: mybot_description
+build/mybot_description/Testing/20261003-0251/Test.xml: 4 tests, 0 errors, 2 failures, 0 skipped
+- flake8
+  <<< failure message
+    -- run_test.py: invoking following command in '/home/kiloming/my_ros/chapt6_ws/src/mybot_description':
+     - /opt/ros/jazzy/bin/ament_flake8 --xunit-file /home/kiloming/my_ros/chapt6_ws/build/mybot_description/test_results/mybot_description/flake8.xunit.xml
+    from launch_ros.actions import Node # for launch Node
+                                       ^
+    from launch.substitutions import Command 
+    ^
+    from launch.substitutions import Command 
+                                            ^
+    from ament_index_python.packages import get_package_share_directory
+    ^
+    import os
+    ^
+    import os
+    ^
+    def generate_launch_description():
+    ^
+        package_path = get_package_share_directory("mybot_description")
+                                                   ^
+        xacro_file = os.path.join(package_path, "urdf", "second_robot", "second_robot.urdf.xacro")
+                                                ^
+        xacro_file = os.path.join(package_path, "urdf", "second_robot", "second_robot.urdf.xacro")
+                                                        ^
+        xacro_file = os.path.join(package_path, "urdf", "second_robot", "second_robot.urdf.xacro")
+                                                                        ^
+        robot_description = Command(["xacro ", xacro_file]) # get the src of the urdf
+                                     ^
+        robot_description = Command(["xacro ", xacro_file]) # get the src of the urdf
+                                                           ^
+            package="robot_state_publisher", #?
+                    ^
+            package="robot_state_publisher", #?
+                                            ^
+            package="robot_state_publisher", #?
+                                             ^
+            executable="robot_state_publisher",
+                       ^
+                    "robot_description": robot_description
+                    ^
+            package="joint_state_publisher",
+                    ^
+            executable="joint_state_publisher"
+                       ^
+            package="rviz2",
+                    ^
+            executable="rviz2",
+                       ^
+            output="screen",
+                   ^
+            additional_env={"LIBGL_ALWAYS_SOFTWARE" : "1"
+                            ^
+            additional_env={"LIBGL_ALWAYS_SOFTWARE" : "1"
+                                                   ^
+            additional_env={"LIBGL_ALWAYS_SOFTWARE" : "1"
+                                                      ^
+            }
+            ^
+        # these things will be launch 
+        ^
+        # these things will be launch 
+                                     ^
+        ])      ^
+    from launch import LaunchDescription
+    ^
+    from launch import LaunchDescription
+    ^
+    from ament_index_python.packages import get_package_share_directory
+    ^
+    from launch_ros.actions import Node
+    ^
+    from launch.substitutions import Command
+    ^
+    from launch.substitutions import Command
+    ^
+    def generate_launch_description():
+    ^
+            "mybot_description"
+            ^
+            package_path + "/urdf/first_robot.urdf"
+                           ^
+                name="model",
+                     ^
+                description="URDF absolute path"
+                            ^
+                        "cat ",
+                        ^
+                            "model"
+                            ^
+                package="robot_state_publisher",
+                        ^
+                executable="robot_state_publisher",
+                           ^
+                        "robot_description": robot_description
+                        ^
+                package="joint_state_publisher",
+                        ^
+                executable="joint_state_publisher"
+                           ^
+                package="rviz2",
+                        ^
+                executable="rviz2"
+                           ^
+        ])      ^
+    1     E124 closing bracket does not match visual indentation
+    1     E203 whitespace before ':'
+    3     E261 at least two spaces before inline comment
+    1     E262 inline comment should start with '# '
+    2     E302 expected 2 blank lines, found 1
+    1     E303 too many blank lines (2)
+    3     F401 'launch.LaunchDescription' imported but unused
+    6     I100 Import statements are in the wrong order. 'from launch.substitutions import Command' should be before 'from launch_ros.actions import Node'
+    1     I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party.
+    28    Q000 Double quotes found but single quotes preferred
+    2     W291 trailing whitespace
+    2     W292 no newline at end of file
+    
+    ./launch/display2_robot.launch.py:2:36: E261 at least two spaces before inline comment
+    
+    ./launch/display2_robot.launch.py:3:1: I100 Import statements are in the wrong order. 'from launch.substitutions import Command' should be before 'from launch_ros.actions import Node'
+    
+    ./launch/display2_robot.launch.py:3:41: W291 trailing whitespace
+    
+    ./launch/display2_robot.launch.py:4:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch.substitutions import Command'
+    
+    ./launch/display2_robot.launch.py:5:1: I100 Import statements are in the wrong order. 'import os' should be before 'from ament_index_python.packages import get_package_share_directory' and in a different group.
+    
+    ./launch/display2_robot.launch.py:5:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party.
+    
+    ./launch/display2_robot.launch.py:7:1: E302 expected 2 blank lines, found 1
+    
+    ./launch/display2_robot.launch.py:8:48: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:9:45: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:9:53: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:9:69: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:10:34: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:10:56: E261 at least two spaces before inline comment
+    
+    ./launch/display2_robot.launch.py:13:17: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:13:41: E261 at least two spaces before inline comment
+    
+    ./launch/display2_robot.launch.py:13:42: E262 inline comment should start with '# '
+    
+    ./launch/display2_robot.launch.py:14:20: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:17:17: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:23:17: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:24:20: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:27:17: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:28:20: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:29:16: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:30:25: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:30:48: E203 whitespace before ':'
+    
+    ./launch/display2_robot.launch.py:30:51: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display2_robot.launch.py:31:9: E124 closing bracket does not match visual indentation
+    
+    ./launch/display2_robot.launch.py:35:5: E303 too many blank lines (2)
+    
+    ./launch/display2_robot.launch.py:35:34: W291 trailing whitespace
+    
+    ./launch/display2_robot.launch.py:40:7: W292 no newline at end of file
+    
+    ./launch/display_robot.launch.py:4:1: I100 Import statements are in the wrong order. 'from launch import LaunchDescription' should be before 'import launch_ros'
+    
+    ./launch/display_robot.launch.py:4:1: F401 'launch.LaunchDescription' imported but unused
+    
+    ./launch/display_robot.launch.py:5:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch import LaunchDescription'
+    
+    ./launch/display_robot.launch.py:6:1: F401 'launch_ros.actions.Node' imported but unused
+    
+    ./launch/display_robot.launch.py:7:1: I100 Import statements are in the wrong order. 'from launch.substitutions import Command' should be before 'from launch_ros.actions import Node'
+    
+    ./launch/display_robot.launch.py:7:1: F401 'launch.substitutions.Command' imported but unused
+    
+    ./launch/display_robot.launch.py:9:1: E302 expected 2 blank lines, found 1
+    
+    ./launch/display_robot.launch.py:12:9: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:16:24: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:21:18: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:23:25: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:31:21: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:33:25: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:43:21: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:44:24: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:47:21: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:55:21: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:56:24: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:62:21: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:63:24: Q000 Double quotes found but single quotes preferred
+    
+    ./launch/display_robot.launch.py:72:7: W292 no newline at end of file
+    
+    
+    3 files checked
+    51 errors
+    
+    'E'-type errors: 9
+    'F'-type errors: 3
+    'I'-type errors: 7
+    'Q'-type errors: 28
+    'W'-type errors: 4
+    
+    Checked files:
+    
+    * ./launch/sim_control.launch.py
+    * ./launch/display_robot.launch.py
+    * ./launch/display2_robot.launch.py
+    -- run_test.py: return code 1
+    -- run_test.py: verify result file '/home/kiloming/my_ros/chapt6_ws/build/mybot_description/test_results/mybot_description/flake8.xunit.xml'
+  >>>
+- lint_cmake
+  <<< failure message
+    -- run_test.py: invoking following command in '/home/kiloming/my_ros/chapt6_ws/src/mybot_description':
+     - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /home/kiloming/my_ros/chapt6_ws/build/mybot_description/test_results/mybot_description/lint_cmake.xunit.xml
+    CMakeLists.txt:28: Line ends in whitespace [whitespace/eol]
+    
+    
+    1 errors
+    -- run_test.py: return code 1
+    -- run_test.py: verify result file '/home/kiloming/my_ros/chapt6_ws/build/mybot_description/test_results/mybot_description/lint_cmake.xunit.xml'
+  >>>
+build/mybot_description/test_results/mybot_description/flake8.xunit.xml: 51 tests, 0 errors, 51 failures, 0 skipped
+- mybot_description.flake8 E261 (./launch/display2_robot.launch.py:2:36)
+  <<< failure message
+    at least two spaces before inline comment:
+    from launch_ros.actions import Node # for launch Node
+  >>>
+- mybot_description.flake8 I100 (./launch/display2_robot.launch.py:3:1)
+  <<< failure message
+    Import statements are in the wrong order. 'from launch.substitutions import Command' should be before 'from launch_ros.actions import Node':
+    from launch.substitutions import Command 
+  >>>
+- mybot_description.flake8 W291 (./launch/display2_robot.launch.py:3:41)
+  <<< failure message
+    trailing whitespace:
+    from launch.substitutions import Command 
+  >>>
+- mybot_description.flake8 I100 (./launch/display2_robot.launch.py:4:1)
+  <<< failure message
+    Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch.substitutions import Command':
+    from ament_index_python.packages import get_package_share_directory
+  >>>
+- mybot_description.flake8 I100 (./launch/display2_robot.launch.py:5:1)
+  <<< failure message
+    Import statements are in the wrong order. 'import os' should be before 'from ament_index_python.packages import get_package_share_directory' and in a different group.:
+    import os
+  >>>
+- mybot_description.flake8 I201 (./launch/display2_robot.launch.py:5:1)
+  <<< failure message
+    Missing newline between import groups. 'import os' is identified as Stdlib and 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party.:
+    import os
+  >>>
+- mybot_description.flake8 E302 (./launch/display2_robot.launch.py:7:1)
+  <<< failure message
+    expected 2 blank lines, found 1:
+    def generate_launch_description():
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:8:48)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+        package_path = get_package_share_directory("mybot_description")
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:9:45)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+        xacro_file = os.path.join(package_path, "urdf", "second_robot", "second_robot.urdf.xacro")
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:9:53)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+        xacro_file = os.path.join(package_path, "urdf", "second_robot", "second_robot.urdf.xacro")
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:9:69)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+        xacro_file = os.path.join(package_path, "urdf", "second_robot", "second_robot.urdf.xacro")
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:10:34)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+        robot_description = Command(["xacro ", xacro_file]) # get the src of the urdf
+  >>>
+- mybot_description.flake8 E261 (./launch/display2_robot.launch.py:10:56)
+  <<< failure message
+    at least two spaces before inline comment:
+        robot_description = Command(["xacro ", xacro_file]) # get the src of the urdf
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:13:17)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            package="robot_state_publisher", #?
+  >>>
+- mybot_description.flake8 E261 (./launch/display2_robot.launch.py:13:41)
+  <<< failure message
+    at least two spaces before inline comment:
+            package="robot_state_publisher", #?
+  >>>
+- mybot_description.flake8 E262 (./launch/display2_robot.launch.py:13:42)
+  <<< failure message
+    inline comment should start with '# ':
+            package="robot_state_publisher", #?
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:14:20)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            executable="robot_state_publisher",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:17:17)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                    "robot_description": robot_description
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:23:17)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            package="joint_state_publisher",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:24:20)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            executable="joint_state_publisher"
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:27:17)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            package="rviz2",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:28:20)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            executable="rviz2",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:29:16)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            output="screen",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:30:25)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            additional_env={"LIBGL_ALWAYS_SOFTWARE" : "1"
+  >>>
+- mybot_description.flake8 E203 (./launch/display2_robot.launch.py:30:48)
+  <<< failure message
+    whitespace before ':':
+            additional_env={"LIBGL_ALWAYS_SOFTWARE" : "1"
+  >>>
+- mybot_description.flake8 Q000 (./launch/display2_robot.launch.py:30:51)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            additional_env={"LIBGL_ALWAYS_SOFTWARE" : "1"
+  >>>
+- mybot_description.flake8 E124 (./launch/display2_robot.launch.py:31:9)
+  <<< failure message
+    closing bracket does not match visual indentation:
+            }
+  >>>
+- mybot_description.flake8 E303 (./launch/display2_robot.launch.py:35:5)
+  <<< failure message
+    too many blank lines (2):
+        # these things will be launch 
+  >>>
+- mybot_description.flake8 W291 (./launch/display2_robot.launch.py:35:34)
+  <<< failure message
+    trailing whitespace:
+        # these things will be launch 
+  >>>
+- mybot_description.flake8 W292 (./launch/display2_robot.launch.py:40:7)
+  <<< failure message
+    no newline at end of file:
+        ])
+  >>>
+- mybot_description.flake8 I100 (./launch/display_robot.launch.py:4:1)
+  <<< failure message
+    Import statements are in the wrong order. 'from launch import LaunchDescription' should be before 'import launch_ros':
+    from launch import LaunchDescription
+  >>>
+- mybot_description.flake8 F401 (./launch/display_robot.launch.py:4:1)
+  <<< failure message
+    'launch.LaunchDescription' imported but unused:
+    from launch import LaunchDescription
+  >>>
+- mybot_description.flake8 I100 (./launch/display_robot.launch.py:5:1)
+  <<< failure message
+    Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch import LaunchDescription':
+    from ament_index_python.packages import get_package_share_directory
+  >>>
+- mybot_description.flake8 F401 (./launch/display_robot.launch.py:6:1)
+  <<< failure message
+    'launch_ros.actions.Node' imported but unused:
+    from launch_ros.actions import Node
+  >>>
+- mybot_description.flake8 I100 (./launch/display_robot.launch.py:7:1)
+  <<< failure message
+    Import statements are in the wrong order. 'from launch.substitutions import Command' should be before 'from launch_ros.actions import Node':
+    from launch.substitutions import Command
+  >>>
+- mybot_description.flake8 F401 (./launch/display_robot.launch.py:7:1)
+  <<< failure message
+    'launch.substitutions.Command' imported but unused:
+    from launch.substitutions import Command
+  >>>
+- mybot_description.flake8 E302 (./launch/display_robot.launch.py:9:1)
+  <<< failure message
+    expected 2 blank lines, found 1:
+    def generate_launch_description():
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:12:9)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            "mybot_description"
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:16:24)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+            package_path + "/urdf/first_robot.urdf"
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:21:18)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                name="model",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:23:25)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                description="URDF absolute path"
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:31:21)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                        "cat ",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:33:25)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                            "model"
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:43:21)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                package="robot_state_publisher",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:44:24)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                executable="robot_state_publisher",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:47:21)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                        "robot_description": robot_description
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:55:21)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                package="joint_state_publisher",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:56:24)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                executable="joint_state_publisher"
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:62:21)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                package="rviz2",
+  >>>
+- mybot_description.flake8 Q000 (./launch/display_robot.launch.py:63:24)
+  <<< failure message
+    Double quotes found but single quotes preferred:
+                executable="rviz2"
+  >>>
+- mybot_description.flake8 W292 (./launch/display_robot.launch.py:72:7)
+  <<< failure message
+    no newline at end of file:
+        ])
+  >>>
+build/mybot_description/test_results/mybot_description/lint_cmake.xunit.xml: 1 test, 0 errors, 1 failure, 0 skipped
+- mybot_description.lint_cmake whitespace/eol (CMakeLists.txt:28)
+  <<< failure message
+    Line ends in whitespace
+  >>>
+
+Summary: 60 tests, 0 errors, 54 failures, 0 skipped

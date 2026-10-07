@@ -1,0 +1,122 @@
+[1;32m[Msg] [0m[1;32mGazebo Sim Server v[0m[1;32m8.15.0[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/home/kiloming/my_ros/chapt6_ws/src/mybot_description/worlds/my_sensor_world.sdf[0m[1;32m].[0m
+[1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
+[1;36m[Dbg] [Physics.cc:1004] [0m[1;36mLoaded [[0m[1;36mgz::physics::dartsim::Plugin[0m[1;36m] from library [[0m[1;36m/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so[0m[1;36m][0m[1;36m[0m
+[1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Physics[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/my_world/create_multiple[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/my_world/create_multiple/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/my_world/remove[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/my_world/remove/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose_vector[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/my_world/set_pose_vector/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/my_world/light_config[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/my_world/light_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/my_world/set_physics[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/my_world/set_physics/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/my_world/set_spherical_coordinates[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/my_world/set_spherical_coordinates/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/my_world/enable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/my_world/enable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/my_world/disable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/my_world/disable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/visual_config[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/visual_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/wheel_slip[0m[1;32m] (async)[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/my_world/wheel_slip/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::UserCommands[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::SceneBroadcaster[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[1;36m[Dbg] [Sensors.cc:697] [0m[1;36mConfiguring Sensors system[0m[1;36m[0m
+[1;36m[Dbg] [Sensors.cc:557] [0m[1;36mSensorsPrivate::Run[0m[1;36m[0m
+[1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Sensors[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Imu[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[1;36m[Dbg] [Sensors.cc:532] [0m[1;36mSensorsPrivate::RenderThread started[0m[1;36m[0m
+[1;36m[Dbg] [Sensors.cc:337] [0m[1;36mWaiting for init[0m[1;36m[0m
+[1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/my_world[0m[1;32m/control], [[0m[1;32m/world/my_world[0m[1;32m/control/state] and [[0m[1;32m/world/my_world[0m[1;32m/playback/control][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mWorld [[0m[1;32mmy_world[0m[1;32m] initialized with [[0m[1;32mdefault_physics[0m[1;32m] physics profile.[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/my_world[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
+[1;36m[Dbg] [SimulationRunner.cc:627] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m4[0m[1;36m[0m
+[1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="second_robot"]/link[@name="base_footprint"]/sensor[@name="laser_sensor"]/gz_frame_id:/tmp/second_robot.urdf:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[INFO] [1790946600.347854905] [gz_ros_control]: Loading controller_manager
+[INFO] [1790946600.387572988] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[WARN] [1790946600.387609822] [controller_manager]: The resource manager is not yet initialized, will wait for the robot description to initialize it..
+[INFO] [1790946600.398644780] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[WARN] [1790946600.398692988] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946601.398865030] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946602.398778947] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946602.398863281] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946603.398786531] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946604.398885032] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946604.398911407] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946605.398810616] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946606.398783699] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946606.399532033] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946607.398809450] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946608.398781992] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946608.399618409] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946609.398866492] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946610.398825743] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946610.399863618] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946611.398805368] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946612.398781952] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946612.399965202] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946613.399843119] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946614.399025703] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946614.400048120] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946615.398808162] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946616.398835079] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946616.400346204] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946617.398818705] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946618.398931705] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946618.400464622] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946619.398789164] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946620.398847373] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946620.400577664] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946621.398843957] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946622.398789624] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946622.400675499] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946623.398784332] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946624.398807666] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946624.400780291] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946625.398814083] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946626.398788084] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946626.400928709] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946627.398810084] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946628.398784377] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946628.401064835] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946629.398787419] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946630.398791627] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946630.401170627] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946631.398812628] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946632.398839837] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946632.401272170] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946633.398792629] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946634.398783546] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946634.401340796] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946635.398967047] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946636.398783880] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946636.401529714] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946637.399001797] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946638.398829006] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946638.401627006] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946639.398976173] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946640.398786049] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946640.402457091] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946641.398784341] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946642.398828300] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[WARN] [1790946642.402568508] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[WARN] [1790946643.398981134] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization

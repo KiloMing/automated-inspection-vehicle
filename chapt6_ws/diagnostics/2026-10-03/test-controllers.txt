@@ -1,0 +1,2 @@
+codex_verify_joints   joint_state_broadcaster/JointStateBroadcaster        active
+codex_verify_velocity forward_command_controller/ForwardCommandController  active

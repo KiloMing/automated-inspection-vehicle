@@ -1,0 +1,16 @@
+{
+  "left_joint": {
+    "max_velocity_rad_s": 1.000000000000136,
+    "position_delta_rad": 2.9299999999560007
+  },
+  "right_joint": {
+    "max_velocity_rad_s": 1.0000000000020393,
+    "position_delta_rad": 2.9299999999705717
+  },
+  "translation_m": 0.10008014019888967,
+  "clock_advanced_s": 3.8760000000000048,
+  "stopped_velocity_rad_s": {
+    "left_joint": -2.924114697818796e-17,
+    "right_joint": -4.4425626855867085e-17
+  }
+}

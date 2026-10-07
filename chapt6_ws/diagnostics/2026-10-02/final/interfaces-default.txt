@@ -1,0 +1,8 @@
+command interfaces
+	left_joint/velocity [available] [unclaimed]
+	right_joint/velocity [available] [unclaimed]
+state interfaces
+	left_joint/position
+	left_joint/velocity
+	right_joint/position
+	right_joint/velocity
