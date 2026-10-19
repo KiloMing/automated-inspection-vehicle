@@ -1,15 +1,19 @@
-# ROS2 / colcon
+# ROS 2 / colcon
 build/
 install/
 log/
 
-# Python
+# Python / editors
 __pycache__/
 *.pyc
-
-# VSCode
 .vscode/
-
-# Temporary files
 *.swp
 *~
+
+# Keil generated outputs and machine-specific debugger state
+/chassis/Objects/
+/chassis/Listings/
+/chassis/DebugConfig/
+/chassis/*.uvguix.*
+/chassis/*.uvoptx
+/chassis/Tests/*.exe
