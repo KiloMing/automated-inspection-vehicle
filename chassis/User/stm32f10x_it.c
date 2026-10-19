@@ -1,5 +1,7 @@
 #include "stm32f10x_it.h"
 #include "HWT101.h"
+#include "MotorControl.h"
+#include "RemoteSerial.h"
 
 volatile uint32_t systick_ms = 0;
    
@@ -28,4 +30,14 @@ void SysTick_Handler(void) {
 void USART2_IRQHandler(void)
 {
     HWT101_RxIRQ();
+}
+
+void USART1_IRQHandler(void)
+{
+    RemoteSerial_RxIRQ();
+}
+
+void TIM1_UP_IRQHandler(void)
+{
+    MotorControl_SampleIRQ();
 }

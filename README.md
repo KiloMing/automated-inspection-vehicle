@@ -1,30 +1,77 @@
-# 自动巡检小车：上位机与底盘
+# 自动巡检小车
 
-本仓库包含 ROS 2 自动巡检上位机和 STM32 底盘下位机，分目录维护。
+项目分为 STM32 底盘和 ROS 2 上位机。底盘负责电机、编码器、航向和蓝牙遥控，上位机负责仿真、导航和巡检任务。
 
-| 目录 | 内容 | 入口 |
-|---|---|---|
-| chassis/ | STM32F103C8 标准库底盘固件 | [Keil 工程](chassis/project.uvprojx) |
-| upper_computer/ | ROS 2、Gazebo、Nav2 自动巡检工程 | [上位机说明](upper_computer/README.md) |
+截至 2026-10-19，底盘已完成双电机速度闭环、HWT101 航向闭环和蓝牙双摇杆控制。实车已确认航向测试通过、蓝牙遥控移动正常。上位机与实车底盘的通信接口还未接通。
+
+## 目录
+
+| 目录 | 内容 |
+| --- | --- |
+| `chassis/` | STM32F103C8 底盘固件，Keil 工程 |
+| `upper_computer/` | ROS 2、Gazebo、Nav2 上位机工程 |
+| `data/` | 两台电机的 VOFA 原始数据、电机1标定结果与分析脚本 |
 
 ## 底盘
 
-已实现双路编码器、TB6612 双电机驱动、HWT101 串口接收与角度处理。
-- [2026-10-18 开发进度](chassis/docs/progress-2026-10-18.md)
-- [HWT101 接线、接口和测试](chassis/docs/HWT101.md)
-- 主机解析测试：在仓库根目录运行 `./chassis/Tests/run_hwt101.ps1`（Windows PowerShell，需要 gcc）。
-- 固件编译：Keil 打开 `chassis/project.uvprojx`，使用 ARM Compiler 5 和 STM32F1 设备包。
-- Keil 编译输出及个人调试配置不提交，由开发工具在本地生成。
+使用 STM32 标准外设库、TB6612 双电机驱动和 HWT101 陀螺仪。电机1为左轮，电机2为右轮，两轮正向均为前进；从上方看，航向角逆时针增加、顺时针减小。
 
-当前 main.c 中 Motor_Init() 被注释，而 Motor_SetPWM() 调用仍在。
-这是现有调试状态，不能直接认为电机已初始化或正在正常运行。
-角度 PID、速度 PID、上下位机实车通信尚未实现。
+| 功能 | 引脚 / 外设 |
+| --- | --- |
+| 蓝牙串口 | USART1，PA9 TX / PA10 RX，115200，8N1 |
+| HWT101 | USART2，PA2 TX / PA3 RX，115200 |
+| 左轮编码器 | TIM2，PA0 / PA1 |
+| 右轮编码器 | TIM3，PA6 / PA7 |
+| 左轮 / 右轮 PWM | TIM4，PB6 / PB7，20 kHz |
+| 左轮方向 | PB12 / PB13 |
+| 右轮方向 | PB14 / PB15 |
+| TB6612 STBY | 外部拉高，不占用 PB5 |
+| OLED | PB8 / PB9，保留驱动，当前主程序未使用 |
+
+### 蓝牙遥控
+
+当前主程序运行双摇杆遥控，串口只接收，不输出调试数据。
+
+```text
+[j,LX,LY,RX,RY]
+[j, 0, 100, 0, 0]
+```
+
+也接受 `joystick` 前缀。四个轴取值为 -100～100，允许字段间带空格。左摇杆 Y 控制前进后退，右摇杆 X 控制左右转向，另外两轴不参与控制。直行时保持航向，转向时更新目标航向；两轴回中停车。
+
+APP 在摇杆变化时发送数据。底盘保持最后一条有效指令，推住不动无需重复发包。`REMOTE_TIMEOUT_MS` 默认设为 0，因此蓝牙断开不会因收包超时自动停车。角度数据异常、串口接收错误和电机控制超时仍会停车，故障恢复后需要摇杆回中。
+
+### 控制参数
+
+编码器按每轮一圈 2500 计数、轮周长 20 cm 换算，电机采样周期为 20 ms：
+
+```text
+车轮 RPM = 每周期编码增量 × 1.2
+轮缘速度（m/s）= 每周期编码增量 × 0.004
+```
+
+两台电机使用独立 PID 状态，共用 `MotorPID.h` 中的增益：KP=8500、KI=2000、KD=0。PID 输入单位为 m/s，输出为千分制 PWM，参数没有额外乘以 100。
+
+遥控默认最高直行速度 0.4 m/s，转向目标变化速度 45°/s，起步 PWM 下限 20%。这些参数在 `RemoteControl.h`，角度环增益在 `HeadingControl.h`。航向保持用于减小车头偏转，不能修正横向位移或陀螺仪长期漂移。
+
+### 编译与文档
+
+用 Keil µVision 打开 [project.uvprojx](chassis/project.uvprojx)，使用 ARM Compiler 5 和 STM32F1 设备包编译、下载。生成的目标文件和本机调试配置不入库。
+
+- [10月19日开发记录](chassis/docs/progress-2026-10-19.md)
+- [10月18日开发记录](chassis/docs/progress-2026-10-18.md)
+- [蓝牙遥控逻辑](chassis/docs/RemoteControl.md)
+- [双电机 PID 接口](chassis/docs/MotorControl.md)
+- [独立航向控制接口](chassis/docs/HeadingControl.md)
+- [HWT101 驱动](chassis/docs/HWT101.md)
+- [PWM 阶梯扫描](chassis/docs/MotorScan.md)
+- [电机1标定结果](data/motor1_calibration.md)
+
+`chassis/Tests/` 保存主机侧测试，使用 GCC 验证解析和控制算法；电机输出、接线和实际运动效果仍需实车验证。阶梯扫描和独立定角接口保留，当前主程序不同时运行这些测试模式。
 
 ## 上位机
 
-上位机源代码位于 upper_computer/chapt6_ws，原目录结构在 upper_computer 内保留。
-原有 ROS 2 工程说明及启动方式见 [上位机 README](upper_computer/README.md)。
-原 README 中的仓库路径需要按当前布局进入：
+上位机基于 Ubuntu 24.04、ROS 2 Jazzy 和 Gazebo Harmonic，包含差速小车模型、AMCL 定位、Nav2 导航和多点巡航；到达巡检点后语音播报并保存相机画面。
 
 ```bash
 git clone git@github.com:KiloMing/automated-inspection-vehicle.git
@@ -32,14 +79,6 @@ cd automated-inspection-vehicle/upper_computer/chapt6_ws
 colcon build
 ```
 
-依赖环境按上位机 README 配置（Ubuntu 24.04、ROS 2 Jazzy、Gazebo Harmonic）。
-2026-10-18 的整理仅验证底盘编译与主机解析测试，未重新运行 ROS 仿真或实车联调。
-上位机与底盘尚未建立速度指令、轮速、航向和里程计的正式通信接口。
+依赖安装和启动方法见 [上位机 README](upper_computer/README.md)。今天的改动集中在底盘，上位机未重新进行仿真验证。
 
-## 仓库管理
-
-原上位机提交历史保留；2026-10-18 起，仓库根目录同时管理两个工程。
-本地更新请在仓库根目录执行 `git pull --ff-only`。
-当前 Windows 工作区为 E:/rosfish，.vscode 配置仅本地保留。
-由于当前网络 SSH 22 端口超时，本机仅为本仓库配置 SSH 443，远端地址保持不变；
-该配置及主机验证文件位于 .git，不随源代码提交，也不修改全局 SSH 设置。
+下一步接通上位机与底盘的速度指令、轮速和航向反馈，再进行实车里程计与导航联调。

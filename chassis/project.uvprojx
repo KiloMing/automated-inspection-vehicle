@@ -690,6 +690,20 @@
         <Group>
           <GroupName>Hardware</GroupName>
           <Files>
+            <File><FileName>RemoteSerial.c</FileName><FileType>1</FileType><FilePath>.\Hardware\RemoteSerial.c</FilePath></File>
+            <File><FileName>RemoteSerial.h</FileName><FileType>5</FileType><FilePath>.\Hardware\RemoteSerial.h</FilePath></File>
+            <File><FileName>RemoteControl.c</FileName><FileType>1</FileType><FilePath>.\Hardware\RemoteControl.c</FilePath></File>
+            <File><FileName>RemoteControl.h</FileName><FileType>5</FileType><FilePath>.\Hardware\RemoteControl.h</FilePath></File>
+            <File><FileName>HeadingControl.c</FileName><FileType>1</FileType><FilePath>.\Hardware\HeadingControl.c</FilePath></File>
+            <File><FileName>HeadingControl.h</FileName><FileType>5</FileType><FilePath>.\Hardware\HeadingControl.h</FilePath></File>
+            <File><FileName>MotorControl.c</FileName><FileType>1</FileType><FilePath>.\Hardware\MotorControl.c</FilePath></File>
+            <File><FileName>MotorControl.h</FileName><FileType>5</FileType><FilePath>.\Hardware\MotorControl.h</FilePath></File>
+            <File><FileName>MotorPID.c</FileName><FileType>1</FileType><FilePath>.\Hardware\MotorPID.c</FilePath></File>
+            <File><FileName>MotorPID.h</FileName><FileType>5</FileType><FilePath>.\Hardware\MotorPID.h</FilePath></File>
+            <File><FileName>MotorScan.c</FileName><FileType>1</FileType><FilePath>.\Hardware\MotorScan.c</FilePath></File>
+            <File><FileName>MotorScan.h</FileName><FileType>5</FileType><FilePath>.\Hardware\MotorScan.h</FilePath></File>
+            <File><FileName>MotorScan_Core.c</FileName><FileType>1</FileType><FilePath>.\Hardware\MotorScan_Core.c</FilePath></File>
+            <File><FileName>MotorScan_Core.h</FileName><FileType>5</FileType><FilePath>.\Hardware\MotorScan_Core.h</FilePath></File>
             <File><FileName>HWT101.c</FileName><FileType>1</FileType><FilePath>.\Hardware\HWT101.c</FilePath></File>
             <File><FileName>HWT101.h</FileName><FileType>5</FileType><FilePath>.\Hardware\HWT101.h</FilePath></File>
             <File><FileName>HWT101_Parser.c</FileName><FileType>1</FileType><FilePath>.\Hardware\HWT101_Parser.c</FilePath></File>
