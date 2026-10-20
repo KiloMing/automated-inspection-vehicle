@@ -71,7 +71,9 @@ APP 在摇杆变化时发送数据。底盘保持最后一条有效指令，推�
 
 ## 上位机
 
-上位机基于 Ubuntu 24.04、ROS 2 Jazzy 和 Gazebo Harmonic，包含差速小车模型、AMCL 定位、Nav2 导航和多点巡航；到达巡检点后语音播报并保存相机画面。
+实车上位机使用 ELF3588 开发板。截至 2026-10-20，已安装 Ubuntu 22.04 和 ROS 2，并配置 SSH。ROS 2 的具体发行版待确认，尚未记录板端工程编译和底盘通信联调结果。
+
+原仿真工程在 Ubuntu 24.04、ROS 2 Jazzy 和 Gazebo Harmonic 下开发，包含差速小车模型、AMCL 定位、Nav2 导航和多点巡航；到达巡检点后语音播报并保存相机画面。该环境与实车开发板不同，板端部署时需核对依赖版本。
 
 ```bash
 git clone git@github.com:KiloMing/automated-inspection-vehicle.git
@@ -79,6 +81,6 @@ cd automated-inspection-vehicle/upper_computer/chapt6_ws
 colcon build
 ```
 
-依赖安装和启动方法见 [上位机 README](upper_computer/README.md)。今天的改动集中在底盘，上位机未重新进行仿真验证。
+原仿真环境的依赖安装和启动方法见 [上位机 README](upper_computer/README.md)。其中 Jazzy 和 Gazebo Harmonic 的安装命令不作为 ELF3588 板端的安装说明。
 
 下一步接通上位机与底盘的速度指令、轮速和航向反馈，再进行实车里程计与导航联调。
