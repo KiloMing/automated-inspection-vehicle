@@ -73,9 +73,13 @@ APP 在摇杆变化时发送数据。底盘保持最后一条有效指令，推�
 
 2026-10-23：已在 Ubuntu 24.04 / ROS 2 Jazzy 电脑端完成 Camsense X1 真实激光雷达建图基本测试，RViz 已接收到地图。[测试记录、代码与现场图片](upper_computer/docs/camsense-x1-mapping-2026-10-23.md)。
 
-实车上位机使用 ELF3588 开发板。截至 2026-10-20，已安装 Ubuntu 22.04 和 ROS 2，并配置 SSH。ROS 2 的具体发行版待确认，尚未记录板端工程编译和底盘通信联调结果。
+新实车上位机确定为 **野火鲁班猫 5 RK3588S（Ubuntu 24.04 ARM64、ROS 2 Jazzy）**，底盘目标为 STM32 四电机麦克纳姆方案。新增独立 `mecanum_bringup` 包，原二轮差速和已完成的真实雷达建图链路保留。板端部署与四电机通信尚未实机验收；仓库现有固件仍为历史双电机版本。
 
-原仿真工程在 Ubuntu 24.04、ROS 2 Jazzy 和 Gazebo Harmonic 下开发，包含差速小车模型、AMCL 定位、Nav2 导航和多点巡航；到达巡检点后语音播报并保存相机画面。该环境与实车开发板不同，板端部署时需核对依赖版本。
+- [麦克纳姆方案与启动方法](upper_computer/docs/mecanum-jazzy.md)
+- [六阶段测试路线](upper_computer/docs/mecanum-six-stage-test-route.md)
+- [验证结果与未测项目](upper_computer/docs/mecanum-validation.md)
+
+原仿真工程在 Ubuntu 24.04、ROS 2 Jazzy 和 Gazebo Harmonic 下开发，包含差速小车模型、AMCL 定位、Nav2 导航和多点巡航；到达巡检点后语音播报并保存相机画面。新板端目标统一采用 Ubuntu 24.04 / Jazzy，但 ARM64 依赖、驱动及性能仍需单独验收。
 
 ```bash
 git clone git@github.com:KiloMing/automated-inspection-vehicle.git
@@ -83,6 +87,6 @@ cd automated-inspection-vehicle/upper_computer/chapt6_ws
 colcon build
 ```
 
-原仿真环境的依赖安装和启动方法见 [上位机 README](upper_computer/README.md)。其中 Jazzy 和 Gazebo Harmonic 的安装命令不作为 ELF3588 板端的安装说明。
+原仿真环境的依赖安装和启动方法见 [上位机 README](upper_computer/README.md)。其中差速部分作为历史对照；新板端部署按麦克纳姆文档执行。
 
 下一步接通上位机与底盘的速度指令、轮速和航向反馈，再进行实车里程计与导航联调。

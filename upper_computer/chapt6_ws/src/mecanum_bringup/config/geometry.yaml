@@ -1,0 +1,11 @@
+# EXAMPLE dimensions in metres. Measure the real chassis before deployment.
+radius: 0.05
+half_length: 0.15
+half_width: 0.125
+body_length: 0.28
+body_width: 0.20
+body_height: 0.08
+laser_x: 0.0
+laser_y: 0.0
+laser_z: 0.18
+laser_yaw: 0.0
