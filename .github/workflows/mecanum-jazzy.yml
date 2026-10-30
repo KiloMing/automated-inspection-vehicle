@@ -18,13 +18,19 @@ jobs:
           apt-get update
           rosdep update --rosdistro jazzy
           rosdep install --from-paths upper_computer/chapt6_ws/src/mecanum_bringup --ignore-src --rosdistro jazzy -y
-          apt-get install -y python3-pytest python3-colcon-common-extensions
+          apt-get install -y python3-pytest python3-colcon-common-extensions xvfb xauth libgl1-mesa-dri
       - name: Build, test and inspect launch interfaces
         shell: bash
         working-directory: upper_computer/chapt6_ws
         run: bash src/mecanum_bringup/scripts/verify_jazzy.sh
+      - name: Headless Gazebo motion and timeout acceptance
+        shell: bash
+        working-directory: upper_computer/chapt6_ws
+        run: timeout 180s xvfb-run -a bash src/mecanum_bringup/scripts/simulation_acceptance.sh
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: colcon-results
-          path: upper_computer/chapt6_ws/log
+          path: |
+            upper_computer/chapt6_ws/log
+            upper_computer/chapt6_ws/simulation.log
