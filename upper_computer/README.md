@@ -8,16 +8,13 @@
 
 ## 实车上位机
 
-2026-10-20 确定使用 ELF3588 开发板作为实车上位机：
+当前目标：**野火鲁班猫 5 RK3588S / Ubuntu 24.04 ARM64 / ROS 2 Jazzy**，STM32 四电机麦克纳姆底盘。新增独立 `mecanum_bringup` 包；下文原差速功能及启动方法继续保留供对照。
 
-| 项目 | 当前状态 |
-| --- | --- |
-| 开发板 | ELF3588 |
-| 操作系统 | Ubuntu 22.04，已安装 |
-| ROS 2 | 已安装，具体发行版待确认 |
-| SSH | 已配置 |
+- [新方案、构建与启动](docs/mecanum-jazzy.md)
+- [六阶段测试路线](docs/mecanum-six-stage-test-route.md)
+- [实际验证状态](docs/mecanum-validation.md)
 
-板端工程编译、依赖适配和 STM32 底盘通信尚待联调。下文保留原仿真环境的操作说明，其中 Ubuntu 24.04、Jazzy 和 Gazebo Harmonic 的配置不代表开发板当前配置。
+历史 ELF3588 / Ubuntu 22.04 配置不作为新方案部署目标。板端及四电机接口未实机验证；Camsense X1 + RF2O + SLAM Toolbox 已完成的基本测试与源码归档不删除。
 
 ## 已实现功能
 

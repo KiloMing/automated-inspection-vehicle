@@ -1,0 +1,30 @@
+name: Mecanum Jazzy
+on:
+  pull_request:
+  push:
+    branches: ['feat/mecanum-*']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-and-test:
+    runs-on: ubuntu-24.04
+    container: ros:jazzy-ros-base
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install declared ROS dependencies
+        shell: bash
+        run: |
+          apt-get update
+          rosdep update --rosdistro jazzy
+          rosdep install --from-paths upper_computer/chapt6_ws/src/mecanum_bringup --ignore-src --rosdistro jazzy -y
+          apt-get install -y python3-pytest python3-colcon-common-extensions
+      - name: Build, test and inspect launch interfaces
+        shell: bash
+        working-directory: upper_computer/chapt6_ws
+        run: bash src/mecanum_bringup/scripts/verify_jazzy.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: colcon-results
+          path: upper_computer/chapt6_ws/log
