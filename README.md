@@ -79,7 +79,7 @@ APP 在摇杆变化时发送数据。底盘保持最后一条有效指令，推�
 - [六阶段测试路线](upper_computer/docs/mecanum-six-stage-test-route.md)
 - [验证结果与未测项目](upper_computer/docs/mecanum-validation.md)
 
-原仿真工程在 Ubuntu 24.04、ROS 2 Jazzy 和 Gazebo Harmonic 下开发，包含差速小车模型、AMCL 定位、Nav2 导航和多点巡航；到达巡检点后语音播报并保存相机画面。该环境与实车开发板不同，板端部署时需核对依赖版本。
+原仿真工程在 Ubuntu 24.04、ROS 2 Jazzy 和 Gazebo Harmonic 下开发，包含差速小车模型、AMCL 定位、Nav2 导航和多点巡航；到达巡检点后语音播报并保存相机画面。新板端目标统一采用 Ubuntu 24.04 / Jazzy，但 ARM64 依赖、驱动及性能仍需单独验收。
 
 ```bash
 git clone git@github.com:KiloMing/automated-inspection-vehicle.git

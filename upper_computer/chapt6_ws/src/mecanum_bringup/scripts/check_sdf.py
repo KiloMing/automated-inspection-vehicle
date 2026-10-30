@@ -5,6 +5,7 @@ import tempfile
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import xacro
+from mecanum_bringup.sdf_validation import parse_sdf
 from ament_index_python.packages import get_package_share_directory
 
 share = Path(get_package_share_directory('mecanum_bringup'))
@@ -15,7 +16,7 @@ with tempfile.TemporaryDirectory() as folder:
         'simulation': 'true', 'controllers_file': str(share/'config/controllers.yaml'),
     }).toxml())
     result = subprocess.run(['gz', 'sdf', '-p', str(urdf)], check=True, capture_output=True, text=True)
-    root = ET.fromstring(result.stdout)
+    root = parse_sdf(result.stdout)
     for name, sign in [('front_left', -1), ('front_right', 1), ('rear_left', 1), ('rear_right', -1)]:
         link = root.find(f"model/link[@name='{name}_wheel']")
         assert link is not None, name
