@@ -1,12 +1,16 @@
-# automated-inspection-vehicle
+# 上位机工程
 
-基于 ROS 2、Gazebo 和 Nav2 实现的自动巡检小车仿真项目。
+当前开发入口为 `mecanum_ws/`，用于四轮麦克纳姆底盘仿真。2026-11-01 已确认前进、横移、旋转和 `odom → base_link` TF 查询；里程计精度、SLAM Toolbox、Nav2 全向导航和实车尚未验收。
 
-目前已经实现从仿真环境启动、机器人控制、AMCL 定位到多点自动巡航的完整流程。小车到达巡检点后会进行语音播报，并保存当前相机画面。
+- [麦克纳姆仿真测试指南](docs/mecanum-simulation-testing.md)
+- [11 月 1 日进度与鲁班猫实车计划](docs/mecanum-progress-2026-11-01.md)
+- [Camsense X1 真实雷达建图记录](docs/camsense-x1-mapping-2026-10-23.md)
 
-原仿真工程在 Ubuntu 24.04 ARM64 + ROS 2 Jazzy 环境下开发和测试。
+下一步先用鲁班猫控制实体麦克纳姆底盘。板端系统、ROS 2 版本和底盘通信接口需要按实物确认。
 
-## 实车上位机
+下文保留 `chapt6_ws/` 原差速仿真的使用说明。该工程包含 AMCL、Nav2、多点巡航、语音播报和拍照；这些功能尚未迁移到麦克纳姆底盘。两个工作区分别构建、分别加载环境。
+
+## 原实车上位机记录（2026-10-20）
 
 2026-10-20 确定使用 ELF3588 开发板作为实车上位机：
 
@@ -19,7 +23,7 @@
 
 板端工程编译、依赖适配和 STM32 底盘通信尚待联调。下文保留原仿真环境的操作说明，其中 Ubuntu 24.04、Jazzy 和 Gazebo Harmonic 的配置不代表开发板当前配置。
 
-## 已实现功能
+## 原差速仿真功能
 
 - 二轮差速小车 URDF / Xacro 模型
 - Gazebo 仿真环境
@@ -96,7 +100,7 @@ sudo apt install espeak-ng
 ## 项目结构
 
 ```text
-automated-inspection-vehicle/
+automated-inspection-vehicle/upper_computer/
 └── chapt6_ws/
     ├── maps/
     │   ├── test_map.pgm
@@ -166,7 +170,7 @@ bool result
 
 ```bash
 git clone https://github.com/KiloMing/automated-inspection-vehicle.git
-cd automated-inspection-vehicle/chapt6_ws
+cd automated-inspection-vehicle/upper_computer/chapt6_ws
 ```
 
 编译：
@@ -520,9 +524,9 @@ ros2 service list | grep speech
 
 ---
 
-## 后续
+## 原差速工程待办
 
-接下来准备继续做：
+以下事项保留，当前优先完成鲁班猫与麦克纳姆实车联调：
 
 - 去掉代码中的绝对路径
 - 将巡检点改成参数或配置文件
