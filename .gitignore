@@ -17,3 +17,11 @@ __pycache__/
 /chassis/*.uvguix.*
 /chassis/*.uvoptx
 /chassis/Tests/*.exe
+
+# F407 local build artifacts
+**/Objects/
+**/Listings/
+*.uvguix.*
+*.uvoptx
+*.axf
+*.hex
