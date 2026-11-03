@@ -11,12 +11,12 @@ __pycache__/
 *~
 
 # Keil generated outputs and machine-specific debugger state
-/chassis/Objects/
-/chassis/Listings/
-/chassis/DebugConfig/
-/chassis/*.uvguix.*
-/chassis/*.uvoptx
-/chassis/Tests/*.exe
+/platforms/differential_f103/firmware/Objects/
+/platforms/differential_f103/firmware/Listings/
+/platforms/differential_f103/firmware/DebugConfig/
+/platforms/differential_f103/firmware/*.uvguix.*
+/platforms/differential_f103/firmware/*.uvoptx
+/platforms/differential_f103/firmware/Tests/*.exe
 
 # F407 local build artifacts
 **/Objects/
