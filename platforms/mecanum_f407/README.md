@@ -4,18 +4,18 @@
 
 ## 当前状态
 
-2026-11-03 用户反馈：已经完成实车 Nav2 部署及初步联调，但路径跟踪与底盘运动有偏差，尚不能正常导航。软件部署完成不等于导航验收通过。
+2026-11-04 用户提供 `mecanumws2`，确认为最新可使用的上位机代码，已原样同步至 `ros2_ws/`。2026-11-03 的导航偏差作为历史记录保留。本次未代为运行代码，具体实测指标以开发者后续记录为准。
 
 ## 目录
 
 - [firmware](firmware/README.md)：四轮 PID、麦轮运动学、编码器、HWT101 相关驱动、串口协议；原硬件设计资料仍在 firmware/docs/hardware。
 - [ros2_ws](ros2_ws/)：实车底盘桥、雷达驱动、建图导航 launch、配置与地图。
 - [hardware](hardware/README.md)：新增硬件参数来源、鲁班猫说明与照片。
-- [每日记录](docs/daily/2026-11-03.md)：实验进展及待解决问题。
+- [最新每日记录](docs/daily/2026-11-04.md)：实验进展及待解决问题。
 
 ## 工作区现状
 
-`chassis_bridge` 接收 `/cmd_vel`，发送 ASCII 速度命令，解析 CRC 位姿帧，发布 `/odom`、`/chassis/pose` 及 TF。`sllidar_ros2` 内包含 `map_start.launch.py` 和 `start_nv2.launch.py`。`config/nav2_real.yaml` 已设置 AMCL 全向模型及 MPPI Omni；`nav2_params.yaml` 仍有差速配置，不能互换使用。
+`chassis_bridge` 接收 `/cmd_vel`，发送 ASCII 速度命令，解析 CRC 位姿帧，发布 `/odom`、`/chassis/pose` 及 TF。`sllidar_ros2` 内包含 `map_start.launch.py` 和 `start_nv2.launch.py`。`config/nav2_real.yaml` 当前启用 Navfn 全局规划器和 Regulated Pure Pursuit 控制器。新增 `mecanum_straight_planner` 包，其配置仍被注释，未默认启用。其他参数文件不能直接互换使用。默认地图更新为 `maps/my_map.yaml`，配套图片为 `my_map.pgm`。
 
 默认设备为底盘 `/dev/ttyUSB1`、雷达 `/dev/ttyUSB0`，实际设备号需核实。默认配置与地图路径仍指向 `/home/cat/mecanumws/`。`chassis_cmd_topic` 尚未真正接入重映射，不能依赖其默认值隔离真实电机。
 

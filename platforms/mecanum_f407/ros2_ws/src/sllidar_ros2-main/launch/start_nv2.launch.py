@@ -283,10 +283,7 @@ def generate_launch_description():
         # 已保存的地图
         DeclareLaunchArgument(
             'map_file',
-            default_value=(
-                '/home/cat/mecanumws/maps/'
-                'inspection_map.yaml'
-            )
+            default_value=('/home/cat/mecanumws/maps/my_map.yaml')
         ),
 
         # Nav2 真实底盘参数

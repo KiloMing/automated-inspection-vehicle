@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>mecanum_straight_planner</name>
+  <version>0.0.1</version>
+  <description>
+    Straight line global planner for mecanum robot
+  </description>
+
+  <maintainer email="maintainer@example.com">
+    maintainer
+  </maintainer>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>nav2_core</depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>pluginlib</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <nav2_core plugin="${prefix}/straight_line_plugin.xml"/>
+  </export>
+</package>
